@@ -1,13 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>This is an experimental web page</h1>
-  hello
-</body>
-</html>
-No way this works
+<link   rel="stylesheet" href="styles.css">
+
+<form target="output.html" >
+  
+  <label id="US" for="name">Username:</label> 
+  <input size='30' name="userName" tabindex="1" type="text" minlength="1" maxlength="15">
+  <br id="breakan">
+  
+  <label id="FI" for="name">Firstname:</label> 
+  <input size='30' name="firstName" tabindex="2" type="text" minlength="1">
+  <br >
+  
+  <label id="SU" for="name">Surname:</label> 
+  <input size='30' name="surName" tabindex="3" type="text" minlength="1">
+  <br >
+  
+  <label id="EA" for="name">Email address:</label> 
+  <input size='30' name="emailAddress" tabindex="4" type="text" minlength="1" maxlength="320">
+  <br >
+  
+  <label id="PN" for="name">Phone number:</label> 
+  <input size='30' name="phoneNumner" tabindex="5"  type="text" minlength="11" maxlength="11">
+  <br >
+
+  <select id="pet-select">
+
+    <option value="">--What form are you in?--</option>
+    
+    <option id="fOS" name="form" tabindex="1" value="80S">8OS</option>
+    <option id="fHB" name="form" tabindex="2" value="8HB">8HB</option> 
+    <option id="fRKH" name="form" tabindex="3" value="8RKH">8RKH</option>
+    <option id="fPP" name="form" tabindex="4" value="8PP">8PP</option>
+    <option id="fPT" name="form" tabindex="5" value="8PT">8PT</option> 
+    <option id="fAN" name="form" tabindex="6" value="8AN">8AN</option>
+
+  </select>
+  
+  <br >
+  
+  <select name="favouriteSubject" id="favouriteSubject">
+
+    <option value="">--What is your favourite subject?--</option>
+    
+    <option id="Ck" tabindex="1" value="Cooking">Cooking</option>
+    <option id="Ma" tabindex="2" value="Maths">Maths</option> 
+    <option id="Rp" tabindex="3" value="Rp">Religion & Philosophy</option>
+    <option id="Ph" tabindex="4" value="Physics">Physics</option>
+    <option id="Mu" tabindex="5" value="Music">Music</option> 
+    <option id="La" tabindex="6" value="Latin">Latin</option>
+    <option id="Hi" tabindex="6" value="History">History</option>
+    <option id="Eg" tabindex="7" value="English">English</option>
+    <option id="Gg" tabindex="8" value="Geography">Geography</option>
+    <option id="Dr" tabindex="9" value="Drama">Drama</option>
+    <option id="Cs" tabindex="10" value="Cs">Computer Science</option>
+    <option id="Ch" tabindex="11" value="Chemistry">Chemistry</option>
+    <option id="Bi" tabindex="12" value="Biology">Biology</option>
+    <option id="Pe" tabindex="13" value="Pe">Physical Education</option>
+    <option id="Dt" tabindex="14" value="Dt">Design & Technology</option>
+    <option id="Ar" tabindex="15" value="Art">Art</option>
+    <option id="Li" tabindex="16" value="Life">Life</option>
+    
+  </select>
+  
+  <p>Select your favourite breakfast cereal:</p>
+  <div>
+    <input id="Shred" type="radio" name="Cereal" tabindex="1" value="Shreddies"
+    checked>
+    <label for="Shreddies">Shreddies</label>
+  </div>
+  
+  <div>
+    <input id="Weet" type="radio" name="Cereal" tabindex="2" value="Weetabix">
+    <label for="Weetabix">Weetabix</label>
+  </div>
+  
+  <div>
+    <input id="Coco" type="radio" name="Cereal" tabindex="3" value="Cocopops">
+    <label for="Cocopos">Cocopops</label>
+  </div>
+  
+  <div>
+    <input id="Luck" type="radio" name="Cereal" tabindex="4" value="Lucky Charms">
+    <label for="Lucky Charms">Lucky Charms</label>
+  </div>
+  
+  <div>
+    <input id="an8" type="radio" name="Cereal" tabindex="5" value="Cheerios">
+    <label id="Cheer" for="Cherrios">Cheerios</label>
+  </div>
+  
+  <p>Choose options for year 9:</P>
+  
+  <div> 
+    <input type="checkbox" id="CS2" name="Computer Science" tabindex="1" checked> 
+    <label for="Computer Science">Computer Science</label> 
+  </div> 
+  
+  <div> 
+    <input type="checkbox" id="DA2" name="Dance" tabindex="2" checked> 
+    <label for="Dance">Dance</label> 
+  </div> 
+  
+  <div> 
+    <input type="checkbox" id="DR2" name="Drama" tabindex="3" checked> 
+    <label for="Drama">Drama</label> 
+  </div> 
+  
+  <div> 
+    <input type="checkbox" id="LA2" name="Latin" tabindex="4" checked> 
+    <label for="Latin">Latin</label> 
+  </div> 
+  
+  <div> 
+    <input type="checkbox" id="SP2" name="Spanish" tabindex="5" checked> 
+    <label for="Spanish">Spanish</label> 
+  </div> 
+
+  <br> 
+    <output name="result" for="me">0</output> 
+  <br> 
+  
+  <meter id="fuel" 
+    min="0" max="100" 
+    low="33" high="66" optimum="80" 
+    value="70"> 
+    at 50/100 
+  </meter> 
+  
+  <label for="fuel">Fuel level:</label> 
+  
+  <br > 
+  <input id="Sub" type="Submit" value="Send Choices"> 
+
+</form>
